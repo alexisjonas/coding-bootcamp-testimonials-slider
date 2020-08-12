@@ -113,7 +113,7 @@ img { max-width: 100%;}
 
     .testimonial__item {
         grid-template-rows: 30px 100px 1fr 100px 30px;
-        grid-template-columns: 70px repeat(7, 1fr) 70px;
+        grid-template-columns: 50px repeat(9, 1fr) 50px;
 
         background-size: 400px;
         background-position: bottom left;
@@ -121,16 +121,19 @@ img { max-width: 100%;}
 
     .testimonial__textContent {
         grid-row: 3 / 4;
-        grid-column: 2 / 6 ;
+        grid-column: 2 / 7 ;
         z-index: 10;
         text-align: left;
         line-height: 1.7rem;
         font-size: 1.2rem;
 
-        background-position: top left;
+        background-position: 17% 5%;
     }
 
-    .testimonial__textContent span:last-of-type { display: inline-block; }
+    .testimonial__textContent span { 
+        display: inline; 
+        font-size: .8rem;
+    }
 
 
     .testimonial__imageContainer {
@@ -152,7 +155,5 @@ img { max-width: 100%;}
         top: 80%;
         left: 25%;
     }
-
-
 
 }
