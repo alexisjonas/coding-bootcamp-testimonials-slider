@@ -51,8 +51,6 @@ img { max-width: 100%;}
 .testimonial__textContent span { display: block; }
 .testimonial__textContent span:not(:last-child) { padding-top: 2rem; }
 
-
-
 .textContent--boldtext {
     font-weight: 700;
 }
@@ -104,12 +102,57 @@ img { max-width: 100%;}
 
 @media only screen and (min-width: 900px) {
 
-    .testimonial { 
-        grid-template-columns: repeat(10, 100px);
-
-        max-width: 1000px;
-    
+    body { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
     }
+
+    .testimonial { max-width: 900px; }
+
+    .testimonial__item {
+        grid-template-rows: 30px 100px 1fr 100px 30px;
+        grid-template-columns: 70px repeat(7, 1fr) 70px;
+
+        background-size: 400px;
+        background-position: bottom left;
+    }
+
+    .testimonial__textContent {
+        grid-row: 3 / 4;
+        grid-column: 2 / 6 ;
+        z-index: 10;
+        text-align: left;
+        line-height: 1.7rem;
+        font-size: 1.2rem;
+
+        background-position: top left;
+    }
+
+    .testimonial__textContent span:last-of-type { display: inline-block; }
+
+
+    .testimonial__imageContainer {
+        grid-row: 2 / 5;
+        grid-column: 5 / -1;
+    }
+
+    .testimonial__imageContainer {
+        height: 500px;
+        width: 500px;
+    }
+    
+    .testimonial__image {
+        max-width: 375px;
+        max-height: 375px;
+    }
+
+    .testimonial__toggle {
+        top: 80%;
+        left: 25%;
+    }
+
 
 
 }
