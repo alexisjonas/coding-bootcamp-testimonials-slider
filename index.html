@@ -26,27 +26,30 @@
       </div>
       <div class="testimonial__imageContainer">
         <img src="images/image-tanya.jpg" alt="Profile photo from testimonial" class="testimonial__image">
-        <div class="testimonial__toggle">
-          <img src="images/icon-prev.svg" alt="arrow left">
-          <img src="images/icon-next.svg" alt="arrow right">
-        </div>
       </div>
     </div>
 
-    <!-- <div class="testimonial__item">
-      <p class="testimonial__textContent">
-        “ If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ”
-      
+    <div class="testimonial__item">
+      <div class="testimonial__textContent">
+        <p>
+          “ If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ”
+        </p>
         <span class="textContent--boldtext">John Tarkpor</span>
         <span class="textContent--accentcolour">Junior Front-end Developer</span>
-      </p>
+      </div>
       <div class="testimonial__imageContainer">
         <img src="images/image-john.jpg" alt="Profile photo from testimonial" class="testimonial__image">
       </div>
-    </div> -->
+    </div>
+
+    <div class="testimonial__toggle">
+      <img class="toggle__icon" onclick="getdiv(-1)" src="images/icon-prev.svg" alt="arrow left">
+      <img class="toggle__icon" onclick="getdiv(1)" src="images/icon-next.svg" alt="arrow right">
+    </div>
 
 
   </section>
-
+  <script src="js/index.js"></script>
 </body>
+
 </html>

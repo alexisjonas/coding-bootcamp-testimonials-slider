@@ -83,7 +83,7 @@ img { max-width: 100%;}
 
 .testimonial__toggle {
     position: absolute;
-    top: 80%;
+    top: 32%;
     left: 50%;
     margin-left: -40px;
     text-align: center;
@@ -152,8 +152,8 @@ img { max-width: 100%;}
     }
 
     .testimonial__toggle {
-        top: 80%;
-        left: 25%;
+        top: 72%;
+        left: 52%;
     }
 
 }
